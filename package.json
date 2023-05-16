@@ -1,0 +1,26 @@
+{
+  "name": "proxy-image",
+  "version": "0.0.3",
+  "description": "A Node.js image proxy test",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "predeploy": "npm test",
+    "start": "node src/app.js",
+    "lint": "eslint src/**.js",
+    "test": "mocha --exit",
+      "posttest": "npm run lint"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "proxy",
+    "node"
+  ],
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {}
+}
